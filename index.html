@@ -64,41 +64,55 @@
   <input name="password" type="password">
 </form></pre>
 <!--tables code-->
-        <h3>Common tags quick table</h3>
-        <table>
-          <caption>tag, purpose, Common risk (if misused)</caption>
-          <thead>
-            <tr>
-              <th>tag</th>
-              <th>purpose</th>
-              <th>Security note</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td> <input> </td>
-              <td>user input</td>
-              <td>sanitize server-side</td>
-            </tr>
-            <tr>
-              <td><cript></td>
-              <td><Runs javascript></td>
-              <td>untrusted scripts = xss</td>
-               </tr>
-            <tr>
-              <td><iframe></td>
-              <td>embed content</td>
-              <td>clickjaking & sandboxing</td>
-            </tr> 
-          </tbody>
-        </table>
-
-
-
-
-
+  <h3>Common tags quick table</h3>
+  <table> 
     
-</form>
+  </table>
+  <!--detail / summury-->
+  <!--form (lots of diverse inpurts)-->
+  <h3 id="tables">Interactive: Identify risky inputs</h3>
+  <form id="demoform" novalidate="">
+    <label for="username">username (text)</label>
+    <br>
+    <input id="username" name="username" type="text" placeholder="alice" required="">
+    <br>
+    <br>
+    <label for="email">email (email)</label>
+    <br>
+    <input id="email" name="email" type="email" placeholder="you@domain" required="">
+    <br>
+    <br>
+   <label for="level">Experience level:</label>
+   <br>
+   <select name="level" id="level">
+    <option value="beginner">beginner</option>
+    <option value="intermediate">intermediate</option>
+    <option value="pro">pro</option>
+   </select>
+   <br>
+   <br>
+    <label>preferred topic:</label>
+    <br>
+    <input type="checkbox" id="opt1" name="topic" value="xss">
+    <label for="opt1">XSS</label>
+
+    <input id="opt2" type="checkbox" name="topic" value="csrf">
+    <label for="opt2">CSRF</label>
+
+    <input type="checkbox" id="opt3" name="topic" value="recon">
+    <label for="opt3">Recon</label>
+    <br>
+    <br>
+    <label for="notes">short notes (textarea)</label>
+    <br>
+    <textarea name="notes" id="notes" rows="4" cols="40" placeholder="what do you want to learn?"></textarea>
+    <br>
+    <br>
+    <button type="submit">submit</button>
+
+    <button type="button">Auto-fill</button>
+  </form>
+
 
 
        
