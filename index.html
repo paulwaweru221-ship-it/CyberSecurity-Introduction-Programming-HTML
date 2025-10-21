@@ -59,92 +59,93 @@
         </dl>
         <!--h3 sample code -->
         <h3>Example HTML snippet</h3>
-    <pre><form action="/login" method="post">
-  <input name="username" type="text">
-  <input name="password" type="password">
-</form></pre>
-<!--tables code-->
-  <h3>Common tags quick table</h3>
-  <table> 
+        <pre><form action="/login" method="post">
+        <input name="username" type="text">
+        <input name="password" type="password">
+        </form></pre>
+       <!--tables code-->
+       <h3>Common tags quick table</h3>
+       <table> 
     
-  </table>
-  <!--detail / summury-->
-  <!--form (lots of diverse inpurts)-->
-  <h3 id="tables">Interactive: Identify risky inputs</h3>
-  <form id="demoform" novalidate="">
-    <label for="username">username (text)</label>
-    <br>
-    <input id="username" name="username" type="text" placeholder="alice" required="">
-    <br>
-    <br>
-    <label for="email">email (email)</label>
-    <br>
-    <input id="email" name="email" type="email" placeholder="you@domain" required="">
-    <br>
-    <br>
-   <label for="level">Experience level:</label>
-   <br>
-   <select name="level" id="level">
-    <option value="beginner">beginner</option>
-    <option value="intermediate">intermediate</option>
-    <option value="pro">pro</option>
-   </select>
-   <br>
-   <br>
-    <label>preferred topic:</label>
-    <br>
-    <input type="checkbox" id="opt1" name="topic" value="xss">
-    <label for="opt1">XSS</label>
+       </table>
+       <!--detail / summury-->
+       <!--form (lots of diverse inpurts)-->
+       <h3 id="tables">Interactive: Identify risky inputs</h3>
+       <form id="demoform" novalidate="">
+       <label for="username">username (text)</label>
+       <br>
+       <input id="username" name="username" type="text" placeholder="alice" required="">
+       <br>
+       <br>
+       <label for="email">email (email)</label>
+       <br>
+       <input id="email" name="email" type="email" placeholder="you@domain" required="">
+       <br>
+       <br>
+       <label for="level">Experience level:</label>
+       <br>
+       <select name="level" id="level">
+       <option value="beginner">beginner</option>
+       <option value="intermediate">intermediate</option>
+       <option value="pro">pro</option>
+       </select>
+       <br>
+       <br>
+       <label>preferred topic:</label>
+       <br>
+       <input type="checkbox" id="opt1" name="topic" value="xss">
+       <label for="opt1">XSS</label>
+ 
+       <input id="opt2" type="checkbox" name="topic" value="csrf">
+       <label for="opt2">CSRF</label>
+ 
+       <input type="checkbox" id="opt3" name="topic" value="recon">
+       <label for="opt3">Recon</label>
+       <br>
+       <br>
+       <label for="notes">short notes (textarea)</label>
+       <br>
+       <textarea name="notes" id="notes" rows="4" cols="40" placeholder="what do you want to learn?"></textarea>
+       <br>
+       <br>
+       <button type="submit">submit</button>
+  
+       <button type="button">Auto-fill</button>
+        < /form>
+       <!--live region for accessibility purposes-->
+       <div id="formMessege" aria-live="polite"></div>
+       <!--sample progress and meter-->
+       <div>
+       <label>learning progress (example):</label>
+       <br>
+       <progress value="30" max="100"></progress>
 
-    <input id="opt2" type="checkbox" name="topic" value="csrf">
-    <label for="opt2">CSRF</label>
-
-    <input type="checkbox" id="opt3" name="topic" value="recon">
-    <label for="opt3">Recon</label>
-    <br>
-    <br>
-    <label for="notes">short notes (textarea)</label>
-    <br>
-    <textarea name="notes" id="notes" rows="4" cols="40" placeholder="what do you want to learn?"></textarea>
-    <br>
-    <br>
-    <button type="submit">submit</button>
-
-    <button type="button">Auto-fill</button>
-  </form>
-  <!--live region for accessibility purposes-->
-<div id="formMessege" aria-live="polite"></div>
-<!--sample progress and meter-->
-<div>
-  <label>learning progress (example):</label>
-  <br>
-  <progress value="30" max="100"></progress>
-
-  <meter value="0.3">30%</meter>
-</div>
-<!--blockquote and citation-->
-<blockquote cite="https://example.com">
-  <p>
-  "Know the web. Know its weaknesses. Fix what you can."  
-  </p>
-  <footer>
-    -
-    <cite>Web Sec Guidelines</cite>
-  </footer>
-</blockquote>
-<details>
-  <summary>
-    ::marker
-    click for a short checklist
-  </summary>
-</details>
-
-
-
-       
-
-</blockquote>
-
+       <meter value="0.3">30%</meter>
+       </div>
+       <!--blockquote and citation-->
+       <blockquote cite="https://example.com">
+       <p>
+       "Know the web. Know its weaknesses. Fix what you can."  
+        </p>
+       <footer>
+       -
+       <cite>Web Sec Guidelines</cite>
+       </footer>
+       </blockquote>
+       <details>
+       <summary>
+        marker
+       click for a short checklist
+       </summary>
+       </details>
+       <!--code / keyboard / sample output-->
+       <p>
+        keyboard shortcut :
+        <span>Ctrl</span>
+         +
+         <span>F</span>
+         to find tags on a page.
+        </p>
       </article>
     </section>
 </main>
