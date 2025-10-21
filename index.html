@@ -59,10 +59,42 @@
         </dl>
         <!--h3 sample code -->
         <h3>Example HTML snippet</h3>
-        <pre><form action="/login" method="post">
+    <pre><form action="/login" method="post">
   <input name="username" type="text">
   <input name="password" type="password">
 </form></pre>
+<!--tables code-->
+        <h3>Common tags quick table</h3>
+        <table>
+          <caption>tag, purpose, Common risk (if misused)</caption>
+          <thead>
+            <tr>
+              <th>tag</th>
+              <th>purpose</th>
+              <th>Security note</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td> <input> </td>
+              <td>user input</td>
+              <td>sanitize server-side</td>
+            </tr>
+            <tr>
+              <td><cript></td>
+              <td><Runs javascript></td>
+              <td>untrusted scripts = xss</td>
+               </tr>
+            <tr>
+              <td><iframe></td>
+              <td>embed content</td>
+              <td>clickjaking & sandboxing</td>
+            </tr> 
+          </tbody>
+        </table>
+
+
+
 
 
     
